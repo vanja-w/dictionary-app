@@ -1,7 +1,11 @@
 import "./App.css";
+import DictionarySearch from "../DictionarySearch/DictionarySearch";
 
-function App() {
-  return <div className="App">Hello from app</div>;
+export default function App() {
+  return (
+    <div className="App">
+      Hello from app
+      <DictionarySearch />
+    </div>
+  );
 }
-
-export default App;
