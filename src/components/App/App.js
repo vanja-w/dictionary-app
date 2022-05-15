@@ -4,8 +4,9 @@ import DictionarySearch from "../DictionarySearch/DictionarySearch";
 export default function App() {
   return (
     <div className="App">
-      Hello from app
-      <DictionarySearch />
+      <div className="container">
+        <DictionarySearch />
+      </div>
     </div>
   );
 }
