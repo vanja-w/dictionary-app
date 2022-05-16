@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import DictionaryResults from "../DictionaryResults/DictionaryResults";
 
-let countSubmit = 0;
-let countGetResponse = 0;
-
 export default function DictionarySearch() {
   // create a state
   const [userInput, setUserInput] = useState("");
@@ -21,15 +18,11 @@ export default function DictionarySearch() {
 
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`;
     axios.get(apiUrl).then(getResponse);
-    countSubmit++;
-    console.log("countSubmit " + countSubmit);
   }
 
   //get API response and store it in state apiResults
   function getResponse(response) {
     setApiResults(response.data[0]);
-    countGetResponse++;
-    console.log("countGetResponse " + countGetResponse);
   }
 
   return (

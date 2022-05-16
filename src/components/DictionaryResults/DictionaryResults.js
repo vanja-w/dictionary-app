@@ -2,6 +2,7 @@ import React from "react";
 import DictionaryMeanings from "../DictionaryMeanings/DictionaryMeanings";
 import Synonyms from "../Synonyms/Synonyms";
 import Antonyms from "../Antonyms/Antonyms";
+import Phonetics from "../Phonetics/Phonetics";
 
 export default function DictionaryResults(props) {
   if (props.apiResults) {
@@ -11,6 +12,13 @@ export default function DictionaryResults(props) {
       <div className="DictionaryResults">
         {/*display the searched word*/}
         <div className="searchedWord">{props.apiResults.word}</div>
+
+        {props.apiResults.phonetics.map((phonetic, index) => (
+          <div key={index}>
+            <Phonetics phonetic={phonetic} />
+          </div>
+        ))}
+
         <div className="row">
           <div className="col-6 left-side">
             <div className="row">
