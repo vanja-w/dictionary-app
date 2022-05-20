@@ -5,7 +5,12 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <DictionarySearch />
+        <main>
+          <DictionarySearch />
+        </main>
+        <footer>
+          <p className="text-center">Coded by Vanja Wallace</p>
+        </footer>
       </div>
     </div>
   );

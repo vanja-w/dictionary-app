@@ -1,6 +1,10 @@
-body {
-  background-image: url("/src/images/hero-img.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.App .container {
+  padding: 100px 0;
+  max-width: 972px;
+  margin: 0 auto;
+}
+
+.App footer {
+  margin: 50px 0px 30px 0px;
+  color: #666;
 }

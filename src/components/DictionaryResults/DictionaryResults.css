@@ -1,0 +1,68 @@
+.DictionaryResults .searchedWord {
+  font-weight: 600;
+  color: #1a3c40;
+  margin: 40px 0px;
+  display: block;
+  text-align: center;
+  background-color: white;
+  font-size: 42px;
+  border-radius: 15px;
+}
+
+.DictionaryResults .meaning-results {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.DictionaryResults .meanings {
+  margin-right: auto;
+}
+
+.DictionaryResults .syn-antonym {
+  margin-left: auto;
+}
+
+.DictionaryResults .synonyms {
+  background-color: #307672;
+  color: white;
+}
+
+.DictionaryResults .synonyms .synonyms-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.DictionaryResults .synonyms h5 {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px;
+  padding: 5px 15px;
+  color: #307672;
+}
+
+.DictionaryResults .synonyms span,
+.antonyms span {
+  font-size: 18px;
+  color: white;
+  align-self: center;
+  letter-spacing: 1px;
+}
+.DictionaryResults .antonyms {
+  background-color: #900c3f;
+  color: white;
+}
+
+.DictionaryResults .antonyms .antonyms-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.DictionaryResults .antonyms h5 {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px;
+  padding: 5px 15px;
+  color: #900c3f;
+}

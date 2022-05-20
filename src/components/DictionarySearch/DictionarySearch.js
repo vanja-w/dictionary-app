@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import DictionaryResults from "../DictionaryResults/DictionaryResults";
+import "./DictionarySearch.css";
 
 export default function DictionarySearch() {
   // create a state
@@ -16,6 +17,7 @@ export default function DictionarySearch() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    // documentation: https://dictionaryapi.dev/e
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${userInput}`;
     axios.get(apiUrl).then(getResponse);
   }
@@ -28,15 +30,16 @@ export default function DictionarySearch() {
   return (
     <div className="DictionarySearch">
       {/*FORM STARTS*/}
-      <form onSubmit={handleSubmit}>
-        <input
-          onChange={handleSearchWord}
-          type="search"
-          className="form-control-lg"
-          placeholder="Search for a userInput"
-        />
-        <input type="submit" className="btn btn-primary btn-lg" />
-      </form>
+      <section>
+        <form onSubmit={handleSubmit}>
+          <input
+            onChange={handleSearchWord}
+            type="search"
+            className="form-control-lg"
+            placeholder="Search for a word"
+          />
+        </form>
+      </section>
       {/*FORM ENDS*/}
 
       <DictionaryResults apiResults={apiResults} />
