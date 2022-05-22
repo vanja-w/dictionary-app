@@ -10,10 +10,9 @@ export default function DictionaryResults(props) {
     console.log(props.apiResults);
 
     return (
-      <div className="DictionaryResults">
+      <div className="DictionaryResults mb-5">
         {/*display the searched word*/}
         <div className="searchedWord">{props.apiResults.word}</div>
-
         <div className="row phonetics">
           {props.apiResults.phonetics.map((phonetic, index) =>
             phonetic.audio ? (
@@ -23,7 +22,6 @@ export default function DictionaryResults(props) {
             ) : null
           )}
         </div>
-
         <div className="row meaning-results mt-5">
           <div className="col-8 left-side">
             <div className="row meanings flex-column">

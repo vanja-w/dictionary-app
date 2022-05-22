@@ -1,12 +1,11 @@
 .DictionaryResults .searchedWord {
   font-weight: 600;
   color: #1a3c40;
-  margin: 40px 0px;
+  margin: 70px 0px 30px 0px;
   display: block;
   text-align: center;
-  background-color: white;
-  font-size: 42px;
-  border-radius: 15px;
+  font-size: 72px;
+  letter-spacing: 3px;
 }
 
 .DictionaryResults .meaning-results {

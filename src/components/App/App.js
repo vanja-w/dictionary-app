@@ -6,7 +6,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <main>
-          <DictionarySearch />
+          <DictionarySearch defaultWord="hello" />
         </main>
         <footer>
           <p className="text-center">Coded by Vanja Wallace</p>
