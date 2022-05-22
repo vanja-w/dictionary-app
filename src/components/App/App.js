@@ -9,7 +9,16 @@ export default function App() {
           <DictionarySearch defaultWord="hello" />
         </main>
         <footer>
-          <p className="text-center">Coded by Vanja Wallace</p>
+          <p className="text-center">
+            <a
+              href="https://github.com/vanja-w/dictionary-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open-source code
+            </a>
+            {""} by Vanja Wallace
+          </p>
         </footer>
       </div>
     </div>
